@@ -1,113 +1,113 @@
-import { useState } from 'react'
-import './index.css'
-import heroBook from './assets/IMAGE.png'
-import darkLightBook from './assets/IMAGE (1).png'
-import atomicBook from './assets/IMAGE (2).png'
-import authorPhoto from './assets/IMAGE (3).png'
-import learnPhoto from './assets/IMAGE (4).png'
-import avatar1 from './assets/IMAGE (5).png'
-import avatar2 from './assets/IMAGE (6).png'
-import avatar3 from './assets/IMAGE (7).png'
-import article1 from './assets/IMAGE (10).png'
-import article2 from './assets/IMAGE (9).png'
-import article3 from './assets/IMAGE (8).png'
-import ctaImage from './assets/IMAGE (11).png'
-import logo1 from './assets/IMAGE (12).png'
-import logo2 from './assets/IMAGE (13).png'
-import logo3 from './assets/IMAGE (14).png'
-import logo4 from './assets/IMAGE (15).png'
+import { useState } from "react";
+import "./index.css";
+import heroBook from "./assets/IMAGE.png";
+import darkLightBook from "./assets/IMAGE (1).png";
+import atomicBook from "./assets/IMAGE (2).png";
+import authorPhoto from "./assets/IMAGE (3).png";
+import learnPhoto from "./assets/IMAGE (4).png";
+import avatar1 from "./assets/IMAGE (5).png";
+import avatar2 from "./assets/IMAGE (6).png";
+import avatar3 from "./assets/IMAGE (7).png";
+import article1 from "./assets/IMAGE (10).png";
+import article2 from "./assets/IMAGE (9).png";
+import article3 from "./assets/IMAGE (8).png";
+import ctaImage from "./assets/IMAGE (11).png";
+import logo1 from "./assets/IMAGE (12).png";
+import logo2 from "./assets/IMAGE (13).png";
+import logo3 from "./assets/IMAGE (14).png";
+import logo4 from "./assets/IMAGE (15).png";
 
 const books = [
   {
     title: "Atomic One's",
     image: atomicBook,
-    price: '$13.84 USD',
+    price: "$13.84 USD",
     description:
-      'As the book contains theoretical content as well as solved questions.',
+      "As the book contains theoretical content as well as solved questions.",
   },
   {
-    title: 'The Dark Light',
+    title: "The Dark Light",
     image: darkLightBook,
-    price: '$86.11 USD',
+    price: "$86.11 USD",
     description:
-      'As the book contains theoretical content as well as solved questions.',
+      "As the book contains theoretical content as well as solved questions.",
   },
-]
+];
 
-const trustLogos = [logo1, logo2, logo3, logo4]
+const trustLogos = [logo1, logo2, logo3, logo4];
 
 const learnPoints = [
-  'Use HDFS, & Map Reduce for storing & analyzing data at scale.',
-  'Consume streaming data using Spark Streaming, Flink, and Storm.',
-  'Choose an appropriate data storage technology for your application.',
-  'Analyze non-relational data using HBase, Cassandra, and MongoDB.',
-]
+  "Use HDFS, & Map Reduce for storing & analyzing data at scale.",
+  "Consume streaming data using Spark Streaming, Flink, and Storm.",
+  "Choose an appropriate data storage technology for your application.",
+  "Analyze non-relational data using HBase, Cassandra, and MongoDB.",
+];
 
 const chapters = [
   {
-    title: 'Chapter- 01 Get Started Intro',
-    pages: 'Pages : 85 pages',
-    length: 'Length : 1 Hour 15 mins',
+    title: "Chapter- 01 Get Started Intro",
+    pages: "Pages : 85 pages",
+    length: "Length : 1 Hour 15 mins",
   },
   {
-    title: 'Chapter- 02 The Roman Culture',
-    pages: 'Pages : 72 pages',
-    length: 'Length : 1 Hour 05 mins',
+    title: "Chapter- 02 The Roman Culture",
+    pages: "Pages : 72 pages",
+    length: "Length : 1 Hour 05 mins",
   },
   {
-    title: 'Chapter- 03 The Greek Iskandiy',
-    pages: 'Pages : 92 pages',
-    length: 'Length : 1 Hour 20 mins',
+    title: "Chapter- 03 The Greek Iskandiy",
+    pages: "Pages : 92 pages",
+    length: "Length : 1 Hour 20 mins",
   },
   {
-    title: 'Chapter- 04 The End Persia',
-    pages: 'Pages : 88 pages',
-    length: 'Length : 1 Hour 10 mins',
+    title: "Chapter- 04 The End Persia",
+    pages: "Pages : 88 pages",
+    length: "Length : 1 Hour 10 mins",
   },
-]
+];
 
 const testimonials = [
   {
-    name: 'James Williams',
-    role: 'Founder',
+    name: "James Williams",
+    role: "Founder",
     avatar: avatar1,
-    text: 'Great book quality and useful lessons. Everything is clear and practical.',
+    text: "Great book quality and useful lessons. Everything is clear and practical.",
   },
   {
-    name: 'Chris Adams',
-    role: 'Designer',
+    name: "Chris Adams",
+    role: "Designer",
     avatar: avatar3,
-    text: 'The best structure I have seen in a writing guide. Helpful chapter by chapter.',
+    text: "The best structure I have seen in a writing guide. Helpful chapter by chapter.",
   },
   {
-    name: 'Angelina Flora',
-    role: 'Reader',
+    name: "Angelina Flora",
+    role: "Reader",
     avatar: avatar2,
-    text: 'Loved the tone and clarity. The examples helped me improve immediately.',
+    text: "Loved the tone and clarity. The examples helped me improve immediately.",
   },
-]
+];
 
 const articles = [
   {
     image: article1,
-    title: 'Significant reading has more info number',
-    text: 'Override the digital divide with additional clickthroughs from DevOps.',
+    title: "Significant reading has more info number",
+    text: "Override the digital divide with additional clickthroughs from DevOps.",
   },
   {
     image: article2,
-    title: 'Many variations of pass majority have suffered',
-    text: 'Capitalize on low-hanging fruit to identify value-added beta activity.',
+    title: "Many variations of pass majority have suffered",
+    text: "Capitalize on low-hanging fruit to identify value-added beta activity.",
   },
   {
     image: article3,
     title: "Words which don't look even slightly believable",
-    text: 'Podcasting operational change management inside of workflows.',
+    text: "Podcasting operational change management inside of workflows.",
   },
-]
+];
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const navItems = ['Home', 'About', 'Pages', 'Contact Us']
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navItems = ["Home", "About", "Pages", "Contact Us"];
 
   return (
     <div className="site">
@@ -140,7 +140,10 @@ function App() {
               <span />
               <span />
             </button>
-            <nav id="primary-navigation" className={`nav ${menuOpen ? 'nav-open' : ''}`}>
+            <nav
+              id="primary-navigation"
+              className={`nav ${menuOpen ? "nav-open" : ""}`}
+            >
               {navItems.map((item) => (
                 <a key={item} href="#" onClick={() => setMenuOpen(false)}>
                   {item}
@@ -155,8 +158,8 @@ function App() {
               <p className="eyebrow">Welcome To Pages!!!</p>
               <h1>Your Books From The Best Writer.</h1>
               <p className="hero-text">
-                We believe that reading books are essential to a healthy culture. They&apos;re where
-                authors can connect with readers.
+                We believe that reading books are essential to a healthy
+                culture. They&apos;re where authors can connect with readers.
               </p>
               <div className="hero-actions">
                 <button className="btn primary">Order Today</button>
@@ -186,7 +189,11 @@ function App() {
                 </div>
               </div>
             </div>
-            <img className="hero-book" src={heroBook} alt="The Dark Light cover" />
+            <img
+              className="hero-book"
+              src={heroBook}
+              alt="The Dark Light cover"
+            />
           </div>
         </div>
       </header>
@@ -219,8 +226,9 @@ function App() {
           <article>
             <h2 className="section-title left">About The Author</h2>
             <p className="muted">
-              All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-              necessary, making this the first true value generator.
+              All the Lorem Ipsum generators on the Internet tend to repeat
+              predefined chunks as necessary, making this the first true value
+              generator.
             </p>
             <div className="about-stats">
               <div>
@@ -255,7 +263,9 @@ function App() {
             {trustLogos.map((logo, i) => (
               <div key={logo} className="logo-item">
                 <img src={logo} alt={`Partner ${i + 1}`} />
-                <h4>{['Amazen Corp', 'Megan Books', 'Los Books', 'Urban Lib'][i]}</h4>
+                <h4>
+                  {["Amazen Corp", "Megan Books", "Los Books", "Urban Lib"][i]}
+                </h4>
                 <p>Lorem ipsum dolor amet, consectetur adipiscing elit.</p>
               </div>
             ))}
@@ -268,8 +278,8 @@ function App() {
           <div>
             <h2>Get Book Copy Today!</h2>
             <p>
-              We believe that bookstores are essential to a healthy culture. They&apos;re where
-              authors can connect with readers.
+              We believe that bookstores are essential to a healthy culture.
+              They&apos;re where authors can connect with readers.
             </p>
             <button className="btn line light">Order Today</button>
           </div>
@@ -304,8 +314,8 @@ function App() {
               <article key={chapter.title} className="chapter-card">
                 <h3>{chapter.title}</h3>
                 <p className="muted">
-                  Web development with React and APIs. Build modern interfaces with reusable
-                  components and clear architecture.
+                  Web development with React and APIs. Build modern interfaces
+                  with reusable components and clear architecture.
                 </p>
                 <div className="chapter-meta">
                   <span>{chapter.pages}</span>
@@ -316,7 +326,9 @@ function App() {
           </div>
           <div className="chapter-action">
             <button className="btn primary">Start a 15-Days Free Trial</button>
-            <p>Short description about each chapter have your contact details.</p>
+            <p>
+              Short description about each chapter have your contact details.
+            </p>
           </div>
         </div>
       </section>
@@ -326,8 +338,8 @@ function App() {
           <article className="testimonial-copy">
             <h2 className="section-title left">Words From Our Readers</h2>
             <p className="muted">
-              We have made this in all the ways we can to provide your reading joy and support.
-              Discover how readers rate this collection.
+              We have made this in all the ways we can to provide your reading
+              joy and support. Discover how readers rate this collection.
             </p>
             <div className="stars">★★★★★</div>
             <small>(4.8/5 from 3,000+ reviews)</small>
@@ -375,9 +387,16 @@ function App() {
         <div className="container">
           <div className="subscribe-box">
             <h2>Get The Best Updates</h2>
-            <p>Subscribe with your mail id to know the current update in book edition.</p>
+            <p>
+              Subscribe with your mail id to know the current update in book
+              edition at your fingertip with in a minute
+            </p>
             <form onSubmit={(e) => e.preventDefault()}>
-              <input type="email" placeholder="Your Email ID..." aria-label="Email" />
+              <input
+                type="email"
+                placeholder="Your Email ID..."
+                aria-label="Email"
+              />
               <button className="btn dark" type="submit">
                 Subscribe
               </button>
@@ -425,7 +444,7 @@ function App() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
